@@ -1,0 +1,70 @@
+{
+  "name": "coinflip-game-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:integration": "vitest run test/integration",
+    "test:unit": "vitest run test/unit",
+    "test:ci": "vitest run --coverage --reporter=verbose",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watch",
+    "test:jest:cov": "jest --coverage",
+    "test:jest:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:jest:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PostNZT/coinflip-game-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PostNZT/coinflip-game-backend/issues"
+  },
+  "homepage": "https://github.com/PostNZT/coinflip-game-backend#readme",
+  "description": "",
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/platform-socket.io": "^11.1.6",
+    "@nestjs/swagger": "^11.2.0",
+    "@nestjs/websockets": "^11.1.6",
+    "@supabase/supabase-js": "^2.57.4",
+    "axios": "^1.12.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/testing": "^11.1.6",
+    "@types/node": "^24.4.0",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
